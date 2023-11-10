@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown</title>
+    <style>
+        body {
+            /* Add your background image URL here */
+            background-image: url('https://www.bhmpics.com/downloads/light-background-images-/31.blue-pink-halftone-background_53876-99004.jpg');
+            /* Set background size to cover the entire screen */
+            background-size: cover;
+            /* Set background attachment to fixed to make it stay in place while scrolling */
+            background-attachment: fixed;
+            /* Add other background properties as needed */
+            margin: 0; /* Remove default margin */
+            font-family: 'Arial', sans-serif; /* Specify a font family */
+            color: black; /* Set text color to white */
+            text-align: center; /* Center-align text */
+        }
+
+        h1 {
+            padding-top: 50px; /* Add padding to the top of the heading */
+        }
+
+        label, select {
+            margin: 10px; /* Add margin to labels and selects */
+            display: block; /* Display labels and selects as block elements */
+        }
+
+        select {
+            width: 200px; /* Set a fixed width for selects */
+            padding: 5px; /* Add padding to selects */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Dynamic Dropdown Example</h1>
+    <label for="country">Select country</label>
+    <select id="country" name="country">
+        <option value="">Select</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+    </select>
+    <label for="city">Select City:</label>
+    <select id="city" name="city">
+        <option value="">Select a country first</option>
+    </select>
+</body>
+</html>
